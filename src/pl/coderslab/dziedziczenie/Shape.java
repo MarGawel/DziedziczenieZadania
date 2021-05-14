@@ -1,9 +1,9 @@
 package pl.coderslab.dziedziczenie;
 
 public class Shape {
-    private double x;
-    private double y;
-    private String color;
+    protected double x;
+    protected double y;
+    protected String color;
 
     public Shape(double x, double y, String color) {
         this.x = x;

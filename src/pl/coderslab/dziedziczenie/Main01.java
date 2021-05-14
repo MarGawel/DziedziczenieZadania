@@ -28,5 +28,14 @@ public class Main01 {
         System.out.println(shape1.getDistance(shape2));
 
         System.out.println("-------------------");
+
+        Circle circle = new Circle(1, 1, "black", 4);
+
+        System.out.println(circle.getDescription());
+        System.out.println(circle.getCircuit());
+        System.out.println(circle.getArea());
+
+        System.out.println("-------------------");
+
     }
 }
