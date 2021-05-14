@@ -7,6 +7,7 @@ public class Book {
     private boolean available = true;
     private Author author;
     private Author[] additionalAuthors = new Author[0];
+    private int popularity = 0;
 
     public Book(int id, String title) {
         this.id = id;
@@ -65,4 +66,22 @@ public class Book {
     public void setAdditionalAuthors(Author[] additionalAuthors) {
         this.additionalAuthors = additionalAuthors;
     }
+
+    public int borrowBook (){
+        this.popularity += 1;
+        return this.popularity;
+    }
+
+    public int getPopularity() {
+        return popularity;
+    }
+
+    public boolean equals(Book book){
+        if (this.id == book.id){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
