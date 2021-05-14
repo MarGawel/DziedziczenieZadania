@@ -41,10 +41,12 @@ public class Main01 {
 
         Employee em1 = new Employee(1, "Marcin", "Gaweł", 100);
         HourlyEmployee em2 = new HourlyEmployee(2, "Jan", "Kowalski", 50);
+        SalariedEmployee em3 = new SalariedEmployee(3, "Adam", "Nowak", 10);
 
         System.out.println(em1.raiseWage(10));
         System.out.println(em2.raiseWage(10));
         System.out.println(em2.calculatePayment(10));
+        System.out.println(em3.calculatePayment());
         System.out.println("-------------------");
 
     }
