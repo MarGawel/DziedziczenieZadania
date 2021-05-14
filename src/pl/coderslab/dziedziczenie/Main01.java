@@ -17,5 +17,16 @@ public class Main01 {
         cal.clearOperations();
         cal.printOperations();
         System.out.println("-------------------");
+
+        System.out.println("-------Shape-------");
+        Shape shape1 = new Shape(3, 4, "red");
+        Shape shape2 = new Shape(0, 0, "Blue");
+
+        System.out.println(shape1.getDescription());
+        System.out.println(shape2.getDescription());
+
+        System.out.println(shape1.getDistance(shape2));
+
+        System.out.println("-------------------");
     }
 }
